@@ -42,24 +42,61 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .right-container {
     border: 1px solid black;
-    padding: 40px;
+
     width: auto;
 
     display: flex;
     flex-direction: column;
+
+    background-color: #F9FAFB;
+}
+
+.intro {
+    padding: 0 40px;
+    margin-top: 100px;
 }
 
 .form-container {
+    margin-top: 60px;
+}
+
+.form-header {
+    font-size: 20px;
+}
+
+fieldset {
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: #ffffff;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 200px;
+}
+
+.button-container {
+    padding-left: 40px;
     margin-top: 40px;
 }
 
 #create-account-button {
-    margin-top: 20px;
     width: 200px;
     height: 40px;
 
     border: none;
     border-radius: 5px;
 
-    background-color: ;
+    background-color: var(--color-brown);
+    color: white;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login-container {
+    padding-left: 40px;
+    margin-top: 30px
 }
