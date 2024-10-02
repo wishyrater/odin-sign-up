@@ -1,4 +1,4 @@
-/* Default styles reset */
+/* || Default styles reset */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -9,6 +9,7 @@
 
 body {
     line-height: 1.5;
+    display: flex;
 }
 
 img, picture, video, canvas, svg {
@@ -22,4 +23,43 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+}
+
+/* || Variables */
+:root {
+    --color-beige: #DB9A67;
+    --color-red: #db7167;
+    --color-yellow: #dbbb67;
+    --color-brown: #db8567;
+}
+
+
+/* || General styles */
+
+.left-container {
+    width: 40%;
+}
+
+.right-container {
+    border: 1px solid black;
+    padding: 40px;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    margin-top: 40px;
+}
+
+#create-account-button {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: ;
 }
