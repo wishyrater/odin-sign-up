@@ -1,4 +1,4 @@
-/* || Default styles reset */
+/* || Default styles reset */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -9,7 +9,7 @@
 
 body {
     line-height: 1.5;
-    display: flex;
+    -webkit-font-smoothing: antialiased;
 }
 
 img, picture, video, canvas, svg {
@@ -25,79 +25,30 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-/* || Variables */
+#root, #__next {
+    isolation: isolate;
+}
+
+/* || Color palette */
 :root {
-    --color-beige: #DB9A67;
-    --color-red: #db7167;
-    --color-yellow: #dbbb67;
-    --color-brown: #db8567;
 }
 
+/* || Page styling */
 
-/* || General styles */
-
-.left-container {
-    width: 40%;
-}
-
-.right-container {
-    border: 1px solid black;
-
-    width: auto;
-
+body {
     display: flex;
-    flex-direction: column;
-
-    background-color: #F9FAFB;
 }
 
-.intro {
-    padding: 0 40px;
-    margin-top: 100px;
+#left-column {
+    flex: 1;
+    flex-basis: 300px;
+    border: 1px solid red;
+    height: 600px;
 }
 
-.form-container {
-    margin-top: 60px;
-}
-
-.form-header {
-    font-size: 20px;
-}
-
-fieldset {
-    width: 100%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    border: none;
-    background-color: #ffffff;
-}
-
-input,
-textarea,
-select,
-button {
-    width: 200px;
-}
-
-
-.button-container {
-    padding-left: 40px;
-    margin-top: 40px;
-}
-
-#create-account-button {
-    width: 200px;
-    height: 40px;
-
-    border: none;
-    border-radius: 5px;
-
-    background-color: var(--color-brown);
-    color: white;
-
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.login-container {
-    padding-left: 40px;
-    margin-top: 30px
+#right-column {
+    flex: 2;
+    flex-basis: 600px;
+    border: 1px solid blue;
+    height: 600px;
 }
