@@ -50,6 +50,41 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+.img-container {
+    height: 100%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 56px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+}
+
+.credit-container {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.credit-container a {
+    color: white;
 }
 
 #left-column img {
