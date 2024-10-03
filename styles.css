@@ -44,14 +44,12 @@ body {
 #left-column {
     flex: 1;
     flex-basis: 300px;
-    border: 1px solid red;
     height: 100vh;
 }
 
 #right-column {
     flex: 2;
     flex-basis: 600px;
-    border: 1px solid blue;
     height: 100vh;
 
     display: flex;
@@ -61,8 +59,15 @@ body {
 }
 
 .intro-container {
-    padding: 15% 60px 60px 30px;
-    border: 1px solid black;
+    padding: 15% 60px 40px 30px;
+}
+
+p {
+    font-size: 22px;
+}
+
+label {
+    font-size: 14px;
 }
 
 input {
@@ -87,6 +92,10 @@ fieldset {
     flex-direction: column;
     width: 100%;
     margin-right: 10px;
+}
+
+.form-header {
+    font-size: 22px;
 }
 
 .button-container {
