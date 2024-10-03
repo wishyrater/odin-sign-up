@@ -51,4 +51,16 @@ body {
     flex-basis: 600px;
     border: 1px solid blue;
     height: 600px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-item  {
+    display: flex;
+    flex-direction: column;
 }
