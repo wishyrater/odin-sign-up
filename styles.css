@@ -54,6 +54,20 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    background-color: #F9FAFB;
+}
+
+input {
+    width: max(200px, 80%);
+}
+
+fieldset {
+    background-color: white;
+    padding: 10px 60px 40px 30px;
+    border: none;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .form-row {
@@ -63,4 +77,5 @@ body {
 .form-item  {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
