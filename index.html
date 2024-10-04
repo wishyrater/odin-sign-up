@@ -30,11 +30,11 @@
                     <div class="form-row">
                         <div class="form-item">
                             <label for="first-name">First name</label>
-                            <input type="text" id="first-name" name="user_first_name" required>
+                            <input type="text" id="first-name" name="user_first_name" required pattern="^[a-zA-Z ]*$">
                         </div>
                         <div class="form-item">
                             <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" name="user_last_name" required>
+                            <input type="text" id="last-name" name="user_last_name" required pattern="^[a-zA-Z ]*$">
                         </div>
                     </div>
                     <div class="form-row">
@@ -44,17 +44,19 @@
                         </div>
                         <div class="form-item">
                             <label for="phone">Phone number</label>
-                            <input type="tel" id="phone" name="user_phone" required>
+                            <input type="tel" id="phone" name="user_phone" required minlength="8" maxlength="13">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-item">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password" required>
+                            <input type="password" id="password" name="password" required minlength="3" maxlength="30"
+                            title="Password must be between 3 and 30 characters.">
                         </div>
                         <div class="form-item">
                             <label for="password-confirmation">Confirm password</label>
-                            <input type="password" id="password-confirmation" name="password_confirm" required>
+                            <input type="password" id="password-confirmation" name="password_confirm" required minlength="3" maxlength="30"
+                            title="Password must be between 3 and 30 characters.">
                         </div>
                     </div>
                 </fieldset>
