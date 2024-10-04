@@ -154,11 +154,11 @@ input:focus {
     background-color: #f2e2c4;
 }
 
-input:valid {
+input:user-valid {
     box-shadow: 0 0 0 1px rgba(0, 150, 0, 0.7);
 }
 
-input:invalid {
+input:user-invalid {
     box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.7);
 }
 
@@ -192,12 +192,26 @@ fieldset {
 
 button[type="submit"] {
     color: white;
+    font-weight: bold;
     border: none;
     border-radius: 6px;
     width: 200px;
     height: 40px;
-    background-color: var(--color-green);
+    background-color: var(--color-lightgreen);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: var(--color-green);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+    background-color: darkgreen;
 }
 
 #outro-text {
@@ -206,4 +220,18 @@ button[type="submit"] {
 
 #outro-text a {
     color: var(--color-lightgreen);
+    text-decoration: none;
+}
+
+#outro-text a:hover {
+    text-decoration: underline;
+}
+
+#outro-text a:active {
+    text-decoration: underline;
+    color: var(--color-green);
+}
+
+#outro-text a:visited {
+    color: gray;
 }
