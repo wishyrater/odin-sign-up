@@ -33,9 +33,28 @@ p, h1, h2, h3, h4, h5, h6 {
 :root {
     --color-gray: #F9FAFB;
     --color-green: #596D48;
+    --color-lightgreen: #7a9564;
 }
 
 /* || Page styling */
+
+@font-face {
+    font-family: "Norse";
+    src: 
+        url("fonts/norse-bold-webfont.woff2") format("woff2"),
+        url("fonts/norse-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: 
+        url("fonts/montserrat-regular-webfont.woff2") format("woff2"),
+        url("fonts/montserrat-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
     display: flex;
@@ -69,10 +88,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: "Norse", Arial, Helvetica, sans-serif;
+    font-size: 80px;
 }
 
 .logo-container img {
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
@@ -101,6 +123,8 @@ body {
     flex-direction: column;
 
     background-color: #F9FAFB;
+
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .intro-container {
@@ -159,4 +183,8 @@ button[type="submit"] {
 
 #outro-text {
     margin: 20px 60px 0 30px;
+}
+
+#outro-text a {
+    color: var(--color-lightgreen);
 }
