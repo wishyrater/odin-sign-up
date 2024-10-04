@@ -1,5 +1,0 @@
-1. Create the form layout
-2. Create the text
-3. Create the window split between image and form page
-4. add the logo with shadow behind on top of the background image
-5. create the 'already have an account'-part
