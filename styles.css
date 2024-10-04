@@ -141,6 +141,25 @@ label {
 
 input {
     width: max(200px, 80%);
+    border-radius: 4px;
+    outline: none;
+
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 2px 10px;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+input:focus {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #f2e2c4;
+}
+
+input:valid {
+    box-shadow: 0 0 0 1px rgba(0, 150, 0, 0.7);
+}
+
+input:invalid {
+    box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.7);
 }
 
 fieldset {
